@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import "reset.css";
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.block {
+  padding: 20px;
+  width: 500px;
+  background-color: aqua;
+}
+.block > p {
+  color: blue;
+}
+.block .text {
+  color: red;
+}
+.block .block__text {
+  color: rebeccapurple;
+  font-size: 80px;
+}
+
+.block-link {
+  padding: 50px;
+  width: 800px;
+  background-color: rebeccapurple;
+}
+.block-link .link {
+  text-decoration: none;
+  /*Оператор енд который копирует название родительского блока*/
+}
+.block-link .link:hover {
+  color: aqua;
+}
+
+/*Переменные*/
+/*Использование переменных*/
+.button__primary {
+  background-color: violet;
+  border: 1px solid darkviolet;
+  border-radius: 20px;
+}
+
+/*шаблоны (1)*/
+.button__secondary, .button__primary {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/*шаблоны (2)*/
+.button__primary {
+  background-color: violet;
+  color: white;
+}
+
+/*шаблоны (3)*/
+.button__secondary {
+  background: none;
+  color: black;
+  border: 1px solid darkviolet;
+}
+
+/*подключение шаблона*/
+.button__primary:hover {
+  cursor: pointer;
+  background-color: red;
+  transition: background-color 3s cubic-bezier(0.1, 0.8, 0.5, 2), color 3s 1s linear;
+}
+
+/*подключение шаблона*/
+.button__secondary:hover {
+  transition: background-color 3s cubic-bezier(0.1, 0.8, 0.5, 2), color 3s 1s linear;
+  cursor: pointer;
+  background-color: red;
+}
+
+/*mixin*/
+/*mixin - применение через шаблон*/
+.button__mix {
+  font-size: 18px;
+  color: white;
+  padding: 20px;
+  background-color: darkred;
+  border-radius: 20px;
+}
+
+/*mixin - применение через шаблон*/
+/*математика-sass*/
+.block1 {
+  width: 31.25%;
+  padding: 60px;
+  background-color: lightgray;
+}
+.block1 .text {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=examples.css.map */

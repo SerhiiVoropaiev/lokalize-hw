@@ -1,0 +1,122 @@
+@import "reset.css";
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.block {
+  padding: 20px;
+  width: 500px;
+  background-color: aqua;
+
+  > p {
+    color: blue;
+  }
+
+  .text {
+    color: red;
+  }
+
+  .block__text {
+    color: rebeccapurple;
+    font-size: 80px;
+  }
+}
+
+.block-link {
+  padding: 50px;
+  width: 800px;
+  background-color: rebeccapurple;
+
+  .link {
+    text-decoration: none;
+    /*Оператор енд который копирует название родительского блока*/
+    &:hover {
+      color: aqua;
+    }
+  }
+}
+
+/*Переменные*/
+$color-button__primary-field: violet;
+$color-button__primary-outline: darkviolet;
+
+$color-button__secondary-field: none;
+$color-button__secondary-outline: darkviolet;
+
+/*Использование переменных*/
+.button__primary {
+  background-color: $color-button__primary-field;
+  border: 1px solid $color-button__primary-outline;
+  border-radius: 20px;
+}
+
+/*шаблоны (1)*/
+%button__size {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+/*шаблоны (2)*/
+%button__size__primary {
+  background-color: $color-button__primary-field;
+  color: white;
+}
+/*шаблоны (3)*/
+%button__size__secondary {
+  background: none;
+  color: black;
+  border: 1px solid $color-button__secondary-outline;
+}
+/*подключение шаблона*/
+.button__primary {
+  @extend %button__size;
+  @extend %button__size__primary;
+
+  &:hover {
+    cursor: pointer;
+    background-color: red;
+    transition: background-color 3s cubic-bezier(0.1, 0.8, 0.5, 2), color 3s 1s linear;
+  }
+}
+/*подключение шаблона*/
+.button__secondary {
+  @extend %button__size;
+  @extend %button__size__secondary;
+
+  &:hover {
+    transition: background-color 3s cubic-bezier(0.1, 0.8, 0.5, 2), color 3s 1s linear;
+    cursor: pointer;
+    background-color: red;
+  }
+}
+
+/*mixin*/
+@mixin button-mixin($fz,$c,$p,$bgc,$br){
+  font-size: $fz;
+  color: $c;
+  padding: $p;
+  background-color: $bgc;
+  border-radius: $br;
+}
+/*mixin - применение через шаблон*/
+%button__mix{
+  @include button-mixin (18px, white, 20px, darkred, 20px);
+}
+/*mixin - применение через шаблон*/
+.button__mix{
+  @extend %button__mix;
+}
+
+/*математика-sass*/
+.block1{
+  width: 300px / 960px *100%;
+  padding: 60px;
+  background-color: lightgray;
+  .text{
+    font-size: 20px;
+  }
+}
+//пример комментария

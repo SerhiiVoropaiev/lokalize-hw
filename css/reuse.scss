@@ -1,0 +1,271 @@
+//fonts
+@font-face {
+  font-family: "GraphikLCG-Regular";
+  src: url("../fonts/GraphikLCG-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "GraphikLCG-Semibold";
+  src: url("../fonts/GraphikLCG-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+//fonts-end
+
+//colors
+$deep-black: #000;
+$deep-black-opacity: #rgba(0, 0, 0, 0.5);
+$accent-orange: #FF6336;
+$light-orange: #FF9C7D;
+$light-yellow: #FFF8E4;
+$white: #fff;
+$light-grey: #EEEEEE;
+$light-blue: #C9E8F2;
+$light-brown: #DABC98;
+$none-color: none;
+//colors-end
+
+//h1
+%main-title{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 70px;
+  color: $deep-black;
+}
+//h1-end
+
+//h2
+%secondary-title{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  color: $deep-black;
+}
+//h2-end
+
+//subtitle-first
+%subtitle-first{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: $deep-black;
+}
+//subtitle-first-end
+
+//subtitle-second
+%subtitle-second{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $deep-black;
+}
+////subtitle-first-end
+
+//description
+%description{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: $deep-black;
+}
+//description-end
+
+//card-title
+%card-title{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: $deep-black;
+  max-width: 330px;
+}
+//card-title-end
+
+//boost-card-title
+%boost-card-title{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: $deep-black
+}
+//boost-card-title-end
+
+//boost-card-paragraph
+%boost-card-paragraph{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $deep-black
+}
+//boost-card-paragraph-end
+
+//card-paragraph
+%card-paragraph{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: $deep-black;
+  max-width: 330px;
+}
+//card-paragraph-end
+
+//buttons
+//buttons_medium
+%secondary-button-m {
+  padding: 13px 34px 14px 35px;
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  background: $none-color;
+  color: $deep-black;
+  border: 1px solid $deep-black;
+  border-radius: 0;
+  &:hover{
+    background-color: $deep-black;
+    color: $white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+%secondary-button-l{
+  padding: 22px 29px;
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  background: $none-color;
+  color: $deep-black;
+  border: 1px solid $deep-black;
+  border-radius: 0;
+  &:hover{
+    background-color: $deep-black;
+    color: $white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+
+%primary-button-m {
+  padding: 14px 34px 15px 35px;
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  background-color: $accent-orange;
+  color: $white;
+  border: none;
+  &:hover{
+    background-color: #FF4611;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+%primary-button-l {
+  padding: 22px 42px;
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  background-color: $accent-orange;
+  color: $white;
+  border: none;
+  &:hover{
+    background-color: #FF4611;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+%text-button{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: $deep-black;
+  background: none;
+  border: none;
+  padding: 0;
+  &:hover{
+    color: $accent-orange;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+//buttons-end
+
+//links
+%menu-link__item__link{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: $deep-black;
+  &:hover{
+    color: $accent-orange;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+//boost-card-link
+%boost-card-link{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $deep-black;
+  &:hover{
+    color: $accent-orange;
+  }
+
+}
+//boost-card-link-end
+
+//links-end
+
+//container
+.container {
+  width: 1330px;
+  margin: 0 auto;
+
+}
+
+//container-end

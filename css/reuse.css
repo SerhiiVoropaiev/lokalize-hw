@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "GraphikLCG-Regular";
+  src: url("../fonts/GraphikLCG-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GraphikLCG-Semibold";
+  src: url("../fonts/GraphikLCG-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+.container {
+  width: 1330px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=reuse.css.map */
