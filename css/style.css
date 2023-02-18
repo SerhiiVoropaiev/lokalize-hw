@@ -487,6 +487,10 @@ header {
   max-width: 115px;
   height: auto;
 }
+.review .container .review__wrap .review__img {
+  max-width: 310px;
+  height: auto;
+}
 
 .loved-software {
   background-color: #DABC98;
