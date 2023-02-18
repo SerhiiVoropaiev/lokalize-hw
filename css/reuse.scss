@@ -49,6 +49,27 @@ $none-color: none;
 }
 //h2-end
 
+//h3
+%thirdly-title{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+  color: $deep-black;
+}
+//h3-end
+
+//h4
+%fourtly-title{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: $deep-black;
+}
+//h4-end
+
 //subtitle-first
 %subtitle-first{
   font-family: sans-serif, "GraphikLCG-Semibold";
@@ -69,7 +90,18 @@ $none-color: none;
   line-height: 30px;
   color: $deep-black;
 }
-////subtitle-first-end
+////subtitle-second-end
+
+//comment
+%comment{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: $deep-black;
+}
+//comment-end
 
 //description
 %description{
@@ -81,6 +113,29 @@ $none-color: none;
   color: $deep-black;
 }
 //description-end
+
+//description-uppercase
+%description-uppercase{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.75px;
+  color: $deep-black;
+}
+//description-uppercase-end
+
+//description-small
+%description-small-end{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: $deep-black;
+}
+//description-small-end
 
 //card-title
 %card-title{
@@ -130,8 +185,19 @@ $none-color: none;
 }
 //card-paragraph-end
 
+//second-paragraph
+%second-paragraph{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $deep-black;
+}
+//second-paragraph-end
+
+
 //buttons
-//buttons_medium
 %secondary-button-m {
   padding: 13px 34px 14px 35px;
   font-family: sans-serif, "GraphikLCG-Semibold";
