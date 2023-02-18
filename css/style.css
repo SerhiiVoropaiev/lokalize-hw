@@ -488,6 +488,7 @@ header {
   height: auto;
 }
 .review .container .review__wrap .review__img {
+  display: block;
   max-width: 310px;
   height: auto;
 }
