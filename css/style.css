@@ -375,6 +375,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 32px;
 }
 .project-explanation .project-explanation__wrap .project-explanation__content {
   display: flex;
@@ -400,6 +401,7 @@ header {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
+  gap: 32px;
 }
 
 .localize-opportunity {
@@ -478,13 +480,14 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 32px;
 }
 .review .container .review__wrap .content .review__comment {
   max-width: 920px;
   padding-bottom: 24px;
 }
 .review .container .review__wrap .content .review__description {
-  padding-bottom: 8px;
+  padding-bottom: 24px;
 }
 .review .container .review__wrap .content .review__logo {
   max-width: 115px;
@@ -601,6 +604,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 32px;
   padding-bottom: 96px;
   border-bottom: 1px solid #000;
 }
@@ -624,7 +628,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 80px;
+  gap: 64px;
 }
 .case-study .container .footer__wrap__wrap .footer__wrap .footer__nav-wrap .nav__wrap {
   display: flex;
