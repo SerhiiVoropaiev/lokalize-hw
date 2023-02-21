@@ -19,6 +19,9 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+*{
+    box-sizing: border-box;
+}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -40,34 +43,4 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-}
-
-/*remove to the components*/
-
-@font-face {
-    font-family: "GraphikLCG-Regular";
-    src: url("../fonts/GraphikLCG-Regular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "GraphikLCG-Semibold";
-    src: url("../fonts/GraphikLCG-Semibold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 600;
-}
-
-.container {
-    width: 1330px;
-    margin: 0 auto;
-}
-
-h1 {
-    font-family: sans-serif, "GraphikLCG-Semibold";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 65px;
-    line-height: 70px;
-    color: #000000;
 }

@@ -36,6 +36,14 @@ $none-color: none;
   line-height: 70px;
   color: $deep-black;
 }
+%main-title__mobile{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 45px;
+  color: $deep-black;
+}
 //h1-end
 
 //h2
@@ -45,6 +53,15 @@ $none-color: none;
   font-weight: 600;
   font-size: 50px;
   line-height: 60px;
+  color: $deep-black;
+}
+
+%secondary-title__mobile{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
   color: $deep-black;
 }
 //h2-end
@@ -68,6 +85,15 @@ $none-color: none;
   line-height: 50px;
   color: $deep-black;
 }
+
+%fourtly-title__mobile{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: $deep-black;
+}
 //h4-end
 
 //subtitle-first
@@ -77,6 +103,14 @@ $none-color: none;
   font-weight: 400;
   font-size: 25px;
   line-height: 35px;
+  color: $deep-black;
+}
+%subtitle-first__mobile{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   color: $deep-black;
 }
 //subtitle-first-end
@@ -90,6 +124,15 @@ $none-color: none;
   line-height: 30px;
   color: $deep-black;
 }
+
+%subtitle-second__mobile{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $deep-black;
+}
 ////subtitle-second-end
 
 //comment
@@ -99,6 +142,15 @@ $none-color: none;
   font-weight: 400;
   font-size: 30px;
   line-height: 40px;
+  color: $deep-black;
+}
+
+%comment__mobile{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
   color: $deep-black;
 }
 //comment-end
@@ -112,6 +164,8 @@ $none-color: none;
   line-height: 25px;
   color: $deep-black;
 }
+
+
 //description-end
 
 //description-uppercase
@@ -148,6 +202,16 @@ $none-color: none;
   color: $deep-black;
   max-width: 330px;
 }
+%card-title__mobile{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: $deep-black;
+  max-width: 330px;
+}
 //card-title-end
 
 //boost-card-title
@@ -157,7 +221,16 @@ $none-color: none;
   font-weight: 600;
   font-size: 30px;
   line-height: 40px;
-  color: $deep-black
+  color: $deep-black;
+}
+
+%boost-card-title__mobile{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: $deep-black;
 }
 //boost-card-title-end
 
@@ -168,7 +241,17 @@ $none-color: none;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: $deep-black
+  color: $deep-black;
+}
+
+
+%boost-card-paragraph__mobile{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $deep-black;
 }
 //boost-card-paragraph-end
 
@@ -192,6 +275,15 @@ $none-color: none;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  color: $deep-black;
+}
+
+%second-paragraph__mobile{
+  font-family: sans-serif, "GraphikLCG-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   color: $deep-black;
 }
 //second-paragraph-end
@@ -329,8 +421,9 @@ $none-color: none;
 
 //container
 .container {
-  width: 1330px;
+  max-width: 1330px;
   margin: 0 auto;
+  padding: 0 40px;
 
 }
 
